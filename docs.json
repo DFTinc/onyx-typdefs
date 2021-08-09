@@ -1,0 +1,471 @@
+{
+  "api": {
+    "name": "OnyxPlugin",
+    "slug": "onyxplugin",
+    "docs": "",
+    "tags": [],
+    "methods": [
+      {
+        "name": "exec",
+        "signature": "(options: IOnyxConfiguration) => any",
+        "parameters": [
+          {
+            "name": "options",
+            "docs": "",
+            "type": "IOnyxConfiguration"
+          }
+        ],
+        "returns": "any",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [
+          "IOnyxConfiguration",
+          "IOnyxPluginResult"
+        ],
+        "slug": "exec"
+      }
+    ],
+    "properties": []
+  },
+  "interfaces": [
+    {
+      "name": "IOnyxConfiguration",
+      "slug": "ionyxconfiguration",
+      "docs": "",
+      "tags": [],
+      "methods": [],
+      "properties": [
+        {
+          "name": "action",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [
+            "OnyxPluginAction"
+          ],
+          "type": "OnyxPluginAction | undefined"
+        },
+        {
+          "name": "onyxLicense",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string | undefined"
+        },
+        {
+          "name": "returnRawImage",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "boolean | undefined"
+        },
+        {
+          "name": "returnProcessedImage",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "boolean | undefined"
+        },
+        {
+          "name": "returnEnhancedImage",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "boolean | undefined"
+        },
+        {
+          "name": "returnBlackWhiteProcessedImage",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "boolean | undefined"
+        },
+        {
+          "name": "returnFingerprintTemplate",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "boolean | undefined"
+        },
+        {
+          "name": "returnWSQ",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "boolean | undefined"
+        },
+        {
+          "name": "shouldConvertToISOTemplate",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "boolean | undefined"
+        },
+        {
+          "name": "computeNfiqMetrics",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "boolean | undefined"
+        },
+        {
+          "name": "wholeFingerCrop",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "boolean | undefined"
+        },
+        {
+          "name": "useManualCapture",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "boolean | undefined"
+        },
+        {
+          "name": "useOnyxLive",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "boolean | undefined"
+        },
+        {
+          "name": "useFlash",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "boolean | undefined"
+        },
+        {
+          "name": "showLoadingSpinner",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "boolean | undefined"
+        },
+        {
+          "name": "reticleOrientation",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [
+            "OnyxReticleOrientation"
+          ],
+          "type": "OnyxReticleOrientation | undefined"
+        },
+        {
+          "name": "reticleAngle",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "number | undefined"
+        },
+        {
+          "name": "reticleScale",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "number | undefined"
+        },
+        {
+          "name": "backgroundColorHexString",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string | undefined"
+        },
+        {
+          "name": "showBackButton",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "boolean | undefined"
+        },
+        {
+          "name": "showManualCaptureText",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "boolean | undefined"
+        },
+        {
+          "name": "manualCaptureText",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string | undefined"
+        },
+        {
+          "name": "backButtonText",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string | undefined"
+        },
+        {
+          "name": "cropFactor",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "number | undefined"
+        },
+        {
+          "name": "cropSize",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [
+            "IOnyxCropSize"
+          ],
+          "type": "IOnyxCropSize | undefined"
+        },
+        {
+          "name": "probe",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string | undefined"
+        },
+        {
+          "name": "reference",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string | undefined"
+        },
+        {
+          "name": "pyramidScales",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "{} | undefined"
+        }
+      ]
+    },
+    {
+      "name": "IOnyxCropSize",
+      "slug": "ionyxcropsize",
+      "docs": "",
+      "tags": [],
+      "methods": [],
+      "properties": [
+        {
+          "name": "width",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "number | undefined"
+        },
+        {
+          "name": "height",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "number | undefined"
+        }
+      ]
+    },
+    {
+      "name": "IOnyxPluginResult",
+      "slug": "ionyxpluginresult",
+      "docs": "",
+      "tags": [],
+      "methods": [],
+      "properties": [
+        {
+          "name": "action",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string | undefined"
+        },
+        {
+          "name": "onyxResults",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [
+            "IOnyxResult"
+          ],
+          "type": "{} | undefined"
+        },
+        {
+          "name": "isVerified",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "boolean | undefined"
+        },
+        {
+          "name": "matchScore",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "number | undefined"
+        }
+      ]
+    },
+    {
+      "name": "IOnyxResult",
+      "slug": "ionyxresult",
+      "docs": "",
+      "tags": [],
+      "methods": [],
+      "properties": [
+        {
+          "name": "rawFingerprintDataUri",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string | undefined"
+        },
+        {
+          "name": "processedFingerprintDataUri",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string | undefined"
+        },
+        {
+          "name": "enhancedFingerprintDataUri",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string | undefined"
+        },
+        {
+          "name": "blackWhiteProcessedFingerprintDataUri",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string | undefined"
+        },
+        {
+          "name": "base64EncodedFingerprintTemplate",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string | undefined"
+        },
+        {
+          "name": "base64EncodedWsqBytes",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string | undefined"
+        },
+        {
+          "name": "base64EncodedGrayRawWsqBytes",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string | undefined"
+        },
+        {
+          "name": "captureMetrics",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [
+            "IOnyxCaptureMetrics"
+          ],
+          "type": "IOnyxCaptureMetrics | undefined"
+        }
+      ]
+    },
+    {
+      "name": "IOnyxCaptureMetrics",
+      "slug": "ionyxcapturemetrics",
+      "docs": "",
+      "tags": [],
+      "methods": [],
+      "properties": [
+        {
+          "name": "nfiqMetrics",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [
+            "IOnyxNfiqMetrics"
+          ],
+          "type": "IOnyxNfiqMetrics | undefined"
+        },
+        {
+          "name": "livenessConfidence",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "number | undefined"
+        },
+        {
+          "name": "focusQuality",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "number | undefined"
+        }
+      ]
+    },
+    {
+      "name": "IOnyxNfiqMetrics",
+      "slug": "ionyxnfiqmetrics",
+      "docs": "",
+      "tags": [],
+      "methods": [],
+      "properties": [
+        {
+          "name": "nfiqScore",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "number | undefined"
+        },
+        {
+          "name": "mlpScore",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "number | undefined"
+        }
+      ]
+    }
+  ],
+  "enums": [
+    {
+      "name": "OnyxPluginAction",
+      "slug": "onyxpluginaction",
+      "members": [
+        {
+          "name": "CAPTURE",
+          "value": "`capture`",
+          "tags": [],
+          "docs": ""
+        },
+        {
+          "name": "MATCH",
+          "value": "`match`",
+          "tags": [],
+          "docs": ""
+        }
+      ]
+    },
+    {
+      "name": "OnyxReticleOrientation",
+      "slug": "onyxreticleorientation",
+      "members": [
+        {
+          "name": "LEFT",
+          "value": "`LEFT`",
+          "tags": [],
+          "docs": ""
+        },
+        {
+          "name": "RIGHT",
+          "value": "`RIGHT`",
+          "tags": [],
+          "docs": ""
+        },
+        {
+          "name": "THUMB_PORTRAIT",
+          "value": "`THUMB_PORTRAIT`",
+          "tags": [],
+          "docs": ""
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "name": "@dft/onyx-typedefs",
+  "version": "1.0.0",
+  "description": "Typescript typedefs for ONYX",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DFTinc/onyx-typdefs.git"
+  },
+  "keywords": [
+    "ONYX",
+    "typescript",
+    "typedefs",
+    "@types"
+  ],
+  "author": "mwheatley@diamondfortress.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DFTinc/onyx-typdefs/issues"
+  },
+  "homepage": "https://github.com/DFTinc/onyx-typdefs#readme",
+  "main": "esm/index.js",
+  "module": "esm/index.js",
+  "types": "esm/index.d.ts",
+  "devDependencies": {
+    "typescript": "^4.3.5"
+  },
+  "files": [
+    "esm"
+  ]
+}
