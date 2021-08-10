@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "definitions.js",
+  "sourceRoot": "",
+  "sources": [
+    "../src/definitions.ts"
+  ],
+  "names": [],
+  "mappings": "AA+EA,MAAM,CAAN,IAAY,gBAGX;AAHD,WAAY,gBAAgB;IAC1B,uCAAmB,CAAA;IACnB,mCAAe,CAAA;AACjB,CAAC,EAHW,gBAAgB,KAAhB,gBAAgB,QAG3B;AAED,MAAM,CAAN,IAAY,sBAIX;AAJD,WAAY,sBAAsB;IAChC,uCAAa,CAAA;IACb,yCAAe,CAAA;IACf,2DAAiC,CAAA;AACnC,CAAC,EAJW,sBAAsB,KAAtB,sBAAsB,QAIjC"
+}

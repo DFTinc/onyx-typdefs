@@ -1,6 +1,6 @@
 {
   "name": "@dft/onyx-typedefs",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Typescript typedefs for ONYX",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

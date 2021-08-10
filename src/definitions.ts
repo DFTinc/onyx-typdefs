@@ -3,7 +3,7 @@ export interface IOnyxPlugin {
 }
 
 export interface IOnyxConfiguration {
-  action?: OnyxPluginAction;
+  action?: OnyxPluginAction
   onyxLicense?: string;
   returnRawImage?: boolean;
   returnProcessedImage?: boolean;
@@ -67,13 +67,13 @@ export interface IOnyxNfiqMetrics {
   mlpScore?: number;
 }
 
-export declare enum OnyxPluginAction {
-  CAPTURE = 'capture',
-  MATCH = 'match'
+export enum OnyxPluginAction {
+  CAPTURE = `capture`,
+  MATCH = `match`
 }
 
-export declare enum OnyxReticleOrientation {
-  LEFT = 'LEFT',
-  RIGHT = 'RIGHT',
-  THUMB_PORTRAIT = 'THUMB_PORTRAIT'
+export enum OnyxReticleOrientation {
+  LEFT = `LEFT`,
+  RIGHT = `RIGHT`,
+  THUMB_PORTRAIT = `THUMB_PORTRAIT`
 }
